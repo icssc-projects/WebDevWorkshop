@@ -11,8 +11,6 @@
 * @link			http://student-council.ics.uci.edu/
 **/
 
-$mailer = new mailer();
-
 class mailer {
 
 	private $name = "";
@@ -20,21 +18,29 @@ class mailer {
 	private $subject = "";
 	private $message = "";
 	private $sendEmailTo = "";
+	private $status = FALSE;
 
-	function __construct()
+	function __construct($name, $email, $subject, $message)
 	{
+/*
+		$this->name = $name;
+		$this->email = $email;
+		$this->subject = $subject;
+		$this->message = $message;
 
-		$this->name = $_POST['name'];
-		$this->email = $_POST['email'];
-		$this->subject = $_POST['subject'];
-		$this->message = $_POST['message'];
+*/
+		$this->name = "Adam Brenner";
+		$this->email = "ha@netops.me";
+		$this->subject = "Test Email";
+		$this->message = "blah blah blah";
 
-
-		try {
+		try {			
 			$this->_isFieldEmpty($this->name);
 			$this->_isFieldEmpty($this->email);
 			$this->_isFieldEmpty($this->subject);
 			$this->_isFieldEmpty($this->message);
+			if(!$this->_isValidEmail($this->email))
+				throw new Exception("Invalid email address");
 			$this->_sendEmail();
 		} catch (Exception $e) {
 			echo $e->getMessage();
@@ -47,6 +53,10 @@ class mailer {
 		}
 	}
 	
+	private function _isValidEmail($email) {
+		return preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $email);
+	}
+	
 	private function _sendEmail() {
 		$headers = 'From: '. $this->email ."\r\n" .
 		    'Reply-To: '. $this->email . "\r\n" .
@@ -54,7 +64,11 @@ class mailer {
 
 		mail($this->sendEmailTo, $this->subject, $this->message, $headers);
 		
-		echo $this->name . ", message was sent without errors!";
+		$status = TRUE;
+	}
+	
+	public function sendOK() {
+		return $status;
 	}
 
 }
