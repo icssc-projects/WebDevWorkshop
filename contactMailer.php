@@ -22,18 +22,12 @@ class mailer {
 
 	function __construct($name, $email, $subject, $message)
 	{
-/*
+
 		$this->name = $name;
 		$this->email = $email;
 		$this->subject = $subject;
 		$this->message = $message;
-
-*/
-		$this->name = "Adam Brenner";
-		$this->email = "ha@netops.me";
-		$this->subject = "Test Email";
-		$this->message = "blah blah blah";
-
+		
 		try {			
 			$this->_isFieldEmpty($this->name);
 			$this->_isFieldEmpty($this->email);
