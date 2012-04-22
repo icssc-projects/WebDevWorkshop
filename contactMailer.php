@@ -58,7 +58,7 @@ class mailer {
 
 		mail($this->sendEmailTo, $this->subject, $this->message, $headers);
 		
-		$status = TRUE;
+		$this->status = TRUE;
 	}
 	
 	public function sendOK() {
