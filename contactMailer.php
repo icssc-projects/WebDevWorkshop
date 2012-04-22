@@ -54,7 +54,7 @@ class mailer {
 
 		mail($this->sendEmailTo, $this->subject, $this->message, $headers);
 		
-		echo $this->name . ", message was sent "
+		echo $this->name . ", message was sent without errors!";
 	}
 
 }
