@@ -4,7 +4,7 @@ class dbObject {
     
     var $host = 'mysql.appjam.roboteater.com';
     var $username = 'icssc_workshop';
-    var $password = 'macedonia';
+    var $password = 'coolcoolcool';
     var $schema = 'webdev_workshop';
     
     /*
