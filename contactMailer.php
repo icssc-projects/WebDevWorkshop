@@ -62,7 +62,7 @@ class mailer {
 	}
 	
 	public function sendOK() {
-		return $status;
+		return $this->status;
 	}
 
 }
