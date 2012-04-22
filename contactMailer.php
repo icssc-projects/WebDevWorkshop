@@ -19,7 +19,7 @@ class mailer {
 	private $email = "";
 	private $subject = "";
 	private $message = "";
-	private $sendEmailTo = "adam12la@gmail.com";
+	private $sendEmailTo = "";
 
 	function __construct()
 	{
