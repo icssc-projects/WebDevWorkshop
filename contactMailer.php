@@ -17,7 +17,7 @@ class mailer {
 	private $email = "";
 	private $subject = "";
 	private $message = "";
-	private $sendEmailTo = "";
+	private $sendEmailTo = "nikola.metulev@gmail.com";
 	private $status = FALSE;
 
 	function __construct($name, $email, $subject, $message)
