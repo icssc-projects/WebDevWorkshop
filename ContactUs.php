@@ -1,8 +1,10 @@
-<html>
-<head>
-<script type="text/javascript" src="js/webdev.js"></script>
-<title>Contact Us</title>
-</head>
+<?php
+	# Configurations
+	##############################################################################
+	## Script Configuration
+	$file = basename($_SERVER["SCRIPT_NAME"], ".php");   # Used for navagtion higlights.
+	include_once ("includes/header.php");
+?>
 <body>
 <form name="contact" action="sendmail.php" method="post" onsubmit="return validateForm()" >
 Your Name: <input type="text" name="name" id="name"/> <br />
