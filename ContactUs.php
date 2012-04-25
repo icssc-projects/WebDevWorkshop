@@ -1,6 +1,6 @@
 <html>
 <head>
-<script type="text/javascript" src="javascript/webdev.js"></script>
+<script type="text/javascript" src="js/webdev.js"></script>
 <title>Contact Us</title>
 </head>
 <body>
