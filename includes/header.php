@@ -21,7 +21,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="<?php echo ($file == "index" ? "active" : ""); ?>"><a href="index.php">Home</a></li>
-			  <li class="<?php echo ($file == "about" ? "active" : ""); ?>"><a href="about.php">Home</a></li>
+			  <li class="<?php echo ($file == "about" ? "active" : ""); ?>"><a href="about.php">About</a></li>
               <li class="<?php echo ($file == "contactus" ? "active" : ""); ?>"><a href="contactus.php">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
