@@ -52,13 +52,14 @@ class mailer {
 	}
 	
 	private function _sendEmail() {
-		$headers  = 'MIME-Version: 1.0' . "\r\n";
-//		$headers .= 'Content-type: text; charset=iso-8859-1' . "\r\n";
-		$headers .= "Content-type: text/plain; charset=iso-8859-1" . "\r\n"; 
-		$headers .= 'From: '.$this->name.' <'.$this->email.'>' . "\r\n";
-		$headers .= 'X-Mailer: php';
+		$headers  = "MIME-Version: 1.0\n";
+//		$headers .= 'Content-type: text; charset=iso-8859-1' . "\n";
+		$headers .= "Content-type: text/plain; charset=iso-8859-2\nContent-Transfer-Encoding: 8bit\nX-Priority: 1\nX-MSMail-Priority: High\n"; 
+		$headers .= "From: ".$this->name." <".$this->email.">\n";
+		$headers .= "Reply-To: ".$this->email."\n";
+		$headers .= "X-Mailer: PHP/". phpversion() . "\n";
 
-		mail($this->sendEmailTo, $this->subject, $this->message, $headers);
+		mail($this->sendEmailTo, $this->subject, wordwrap($this->message), $headers);
 		
 		$this->status = TRUE;
 	}
