@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head> 
-    <meta http-equiv="content-type" content=?"text/?html;? charset=utf-8">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
 	<link href="css/bootstrap.css" rel = "stylesheet">
     <title>Workshop</title>
 	</head>
@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Personal Website</a>
+          <a class="brand" href="index.php">Personal Website</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="<?php echo ($file == "index" ? "active" : ""); ?>"><a href="index.php">Home</a></li>

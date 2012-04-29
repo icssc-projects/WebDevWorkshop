@@ -17,7 +17,7 @@ class mailer {
 	private $email = "";
 	private $subject = "";
 	private $message = "";
-	private $sendEmailTo = "nikola.metulev@gmail.com";
+	private $sendEmailTo = "adam12la@gmail.com";
 	private $status = FALSE;
 
 	function __construct($name, $email, $subject, $message)
@@ -52,9 +52,11 @@ class mailer {
 	}
 	
 	private function _sendEmail() {
-		$headers = 'From: '. $this->email ."\r\n" .
-		    'Reply-To: '. $this->email . "\r\n" .
-		    'X-Mailer: PHP/' . phpversion();
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+//		$headers .= 'Content-type: text; charset=iso-8859-1' . "\r\n";
+		$headers .= "Content-type: text/plain; charset=iso-8859-1" . "\r\n"; 
+		$headers .= 'From: '.$this->name.' <'.$this->email.'>' . "\r\n";
+		$headers .= 'X-Mailer: php';
 
 		mail($this->sendEmailTo, $this->subject, $this->message, $headers);
 		
