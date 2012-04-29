@@ -456,8 +456,7 @@ dd {
 hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
+  border-top: 2px solid black;
 }
 strong {
   font-weight: bold;
@@ -3118,10 +3117,13 @@ a.thumbnail:hover {
   padding: 60px;
   margin-bottom: 30px;
   background-color: #eeeeee;
+  min-height: 20em;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   box-shadow: 0 0 2em 0 #4f4f4f;
+  -moz-box-shadow: 0 0 2em 0 #4f4f4f;
+  -webkit-box-shadow: 0 0 2em 0 #4f4f4f;
 }
 .hero-unit h1 {
   margin-bottom: 0;
@@ -3130,15 +3132,41 @@ a.thumbnail:hover {
   color: inherit;
   letter-spacing: -1px;
 }
-.hero-unit p {
+.hero-unit p, .hero-unit table {
   font-size: 18px;
   font-weight: 200;
   line-height: 27px;
   color: inherit;
 }
+.hero-unit .
 .dropdown {
   position: relative;
 }
+
+.top{
+position:relative;
+padding-bottom: 5em;
+margin-bottom:5em;
+min-height:3em;
+}
+.left{
+position: relative;
+float: left;
+}
+
+.left td{
+padding-right:2em;
+}
+.portrait{
+position: relative;
+float: left;
+margin-left: 0em;
+padding-left: 5em;
+}
+.bottom{
+position:relative;
+margin-top:5em;
+padding-top:5em;
 .dropdown-toggle {
   *margin-bottom: -3px;
 }
