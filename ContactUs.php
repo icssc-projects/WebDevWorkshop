@@ -17,39 +17,6 @@
 
   <input type="submit" class="btn" valud="Submit" />
 </form>
-
-<!--
-
-
-
-<table class = "table">
-	<form name="contact" action="sendmail.php" method="post" onsubmit="return validateForm()" >
-	<tr><td>Your Name: </td><td><input type="text" name="name" id="name"/></td><tr/>
-	<tr><td>Your E-mail:</td><td><input type="text" name="email" id = "email"/> </td><tr />
-	<tr><td>Subject:</td><td><input type="text" name="subject" id="subject"/> </td><tr />
-	<tr><td valgin="top">Content:</td>
-	<td><textarea name="content" id="content" rows ="5" ></textarea></td>
-	</table>
-	<input class="btn" type="submit" value="Submit" />
-	</form>
-	
-	
-	<form class="form-horizontal">
-	    <div class="control-group">
-	      <label class="control-label" for="input01">Text input</label>
-	      <div class="controls">
-	        <input type="text" class="input-xlarge" id="input01">
-	        <p class="help-block">Supporting help text</p>
-	      </div>
-	</form>
-	<form class="form-horizontal">
-	    <div class="control-group">
-	      <label class="control-label" for="input01">Text input</label>
-	      <div class="controls">
-	        <input type="text" class="input-xlarge" id="input01">
-	        <p class="help-block">Supporting help text</p>
-	      </div>
-	-->
 	</div>
 </div>
 </body>
