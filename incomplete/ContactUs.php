@@ -1,10 +1,4 @@
-<?php
-	# Configurations
-	##############################################################################
-	## Script Configuration
-	$file = basename($_SERVER["SCRIPT_NAME"], ".php");   # Used for navagtion higlights.
-	include_once ("includes/header.php");
-?>
+
 <div class = "container">
 	<div class = "hero-unit">
 <script type="text/javascript" src="js/webdev.js"></script>
