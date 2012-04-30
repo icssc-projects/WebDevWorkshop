@@ -11,6 +11,29 @@
 			<!--<h1> Peter the Anteater</h1>-->
 			<div class = "top">
 				<div class = "left">
+				<p>
+				<strong> Name: <br \>
+						 Age:	<br \>
+						 Occupation: <br \>
+						 Address:	<br \>
+						 Phone Number:	<br \>
+						 Email:	<br \>
+						 Website:	<br\>
+				 </strong>
+				 </p>
+				 </div>
+				 <div class = "right">
+				 <p>
+				 <strong>Peter the Anteater <br \>
+						 42	<br \>
+						 Anteater <br \>
+						 Aldrich Hall Irvine, Ca 92697-1075 <br \>
+						 (949) 824-6703 <br \>
+						 admissions@uci.edu	<br \>
+						 uci.edu/peter
+				 </strong>
+				 </p>
+				<!--
 				<table>
 					<tr><td><strong>Name:</strong></td><td>Peter the Anteater</td></tr>
 					<tr><td><strong>Age:</strong></td><td>42</td></tr>
@@ -19,7 +42,7 @@
 					<tr><td><strong>Phone Number: </strong></td><td>(949) 824-6703</td></tr>
 					<tr><td><strong>Email:</strong></td><td>admissions@uci.edu</td></tr>
 					<tr><td><strong>Website:</strong></td><td>uci.edu/peter</td></tr>
-				</table>
+				</table>-->
 				</div>
 				<div class = "portrait">
 					<ul class = "thumbnails">

@@ -3157,6 +3157,11 @@ float: left;
 .left td{
 padding-right:2em;
 }
+
+.right{
+position: relative;
+float: left;
+}
 .portrait{
 position: relative;
 float: left;
